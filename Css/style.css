@@ -1,0 +1,568 @@
+/* Start Global Rules */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: var(--very-dark-cyan);
+	margin: 0;
+	padding: 0;
+}
+
+p:not(.icon p) {
+	line-height: 1.8;
+}
+
+ul {
+	list-style: none;
+}
+
+/* End Global Rules */
+
+/* Start Variables */
+:root {
+	--pink: hsl(322, 100%, 66%);
+	--light-pink: hsl(321, 100%, 78%);
+	--light-red: hsl(0, 100%, 63%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--very-pale-blue: hsl(207, 100%, 98%);
+	--main-padding: 100px;
+	--main-transition: 0.3s;
+}
+
+/* End Variables */
+
+/* Start Container */
+.container {
+	padding: 0 200px;
+	margin: auto;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.container {
+		padding: 0 15px;
+	}
+}
+
+/* Media For Desktop 1440px */
+@media (min-width: 1440px) and (max-width: 1441px) {
+}
+
+/* End Container */
+
+/* Start Header */
+header {
+	font-family: "Poppins", sans-serif;
+	padding-top: calc(var(--main-padding) / 2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: calc(var(--main-padding) / 2);
+	padding-right: var(--main-padding);
+}
+
+header .logo {
+	width: 240px;
+}
+
+header .logo img {
+	width: 100%;
+	max-width: 100%;
+}
+
+header .try-free {
+	font-size: 20px;
+	width: 150px;
+	height: 44px;
+	color: var(--light-pink);
+	border: 3px var(--light-pink) solid;
+	border-radius: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	header {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 25px;
+	}
+
+	header .logo {
+		width: 150px;
+	}
+
+	header .try-free {
+		font-size: 15px;
+		width: 100px;
+		height: 35px;
+	}
+}
+
+/* End Header */
+
+/* Start Intro */
+.intro-text {
+	padding-top: var(--main-padding);
+	text-align: center;
+}
+
+.started-free {
+	background-color: var(--pink);
+	color: white;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 330px;
+	height: 80px;
+	margin: auto;
+	margin-top: calc(var(--main-padding) / 2);
+	font-size: 22px;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 5px 10px 5px #ccc;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.intro-text h1 {
+		font-size: 30px;
+	}
+
+	.intro-p::before {
+		content: "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections users as you engage in genuine discussion. withyour";
+	}
+
+	.intro-p p {
+		display: none;
+	}
+
+	.started-free {
+		width: 230px;
+		height: 50px;
+		font-size: 16px;
+	}
+}
+
+/* End Intro */
+
+/* Start One */
+.one {
+	padding-top: var(--main-padding);
+}
+
+.one .image {
+	width: 1035px;
+	margin: auto;
+}
+
+.one .image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.one .image {
+		width: 320px;
+	}
+}
+
+/* End One */
+
+/* Start Two */
+.two {
+	padding-top: var(--main-padding);
+	padding-left: var(--main-padding);
+	padding-right: var(--main-padding);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.two .card h2 {
+	margin: 0;
+	font-size: 85px;
+}
+
+.two .card p {
+	color: #acb0b4;
+	text-align: center;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.two {
+		flex-direction: column;
+	}
+
+	.two .card h2 {
+		font-size: 70px;
+	}
+
+	.two .card p {
+		font-size: 18px;
+		margin: 0;
+		margin-bottom: 60px;
+	}
+}
+/* End Two */
+
+/* Start Three */
+.three {
+	padding-top: var(--main-padding);
+}
+
+.three .top {
+	width: 100%;
+	margin: auto;
+}
+
+.three .top img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.three .bottom {
+	width: 100%;
+	margin: auto;
+}
+
+.three .bottom img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Start Three Content */
+.three .content {
+	background-color: #f5faff;
+	margin-top: -5px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.three .content .image {
+	width: 500px;
+}
+
+.three .content .image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.three .content h2 {
+	margin: 0;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.three .content {
+		flex-direction: column-reverse;
+		text-align: center;
+		justify-content: space-around;
+		height: 500px;
+	}
+
+	.three .content .image {
+		width: 280px;
+	}
+
+	.three .content h2 {
+		font-size: 30px;
+	}
+
+	.three .content .text .text-p p {
+		display: none;
+	}
+
+	.three .content .text .text-p {
+		margin-top: 20px;
+	}
+
+	.three .content .text .text-p::before {
+		content: "Genetae meaningful discussions with your audience and buld a strong, loyal community. Think of the insightful conversations you miss uot on with a feedback form.";
+	}
+}
+/* End Three Content */
+
+/* End Three */
+
+/* Start Four */
+.four {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: var(--main-padding);
+}
+
+.four .image {
+	width: 500px;
+}
+
+.four .image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.four .text h2 {
+	font-size: 35px;
+}
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.four {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 535px;
+	}
+
+	.four .image {
+		width: 280px;
+	}
+
+	.four .text {
+		text-align: center;
+	}
+
+	.four .text p {
+		display: none;
+	}
+
+	.four .text .p {
+		margin: auto 7px;
+	}
+
+	.four .text .p::before {
+		content: "You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.";
+	}
+
+	.four .text h2 {
+		font-size: 30px;
+	}
+}
+/* End Four */
+
+/* Start Five */
+.five {
+	padding-top: var(--main-padding);
+}
+
+.five > .image {
+	width: 100%;
+	margin: 0;
+}
+
+.five > .image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Start Five Content */
+.five .content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #f6fbff;
+	margin-top: -5px;
+}
+
+.five .content .image {
+	width: 500px;
+}
+
+.five .content .image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.five .content .text h2 {
+	font-size: 35px;
+}
+/* End Five Content */
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	.five .content {
+		flex-direction: column-reverse;
+		height: 535px;
+	}
+
+	.five .content .text {
+		text-align: center;
+	}
+
+	.five .content .image {
+		width: 280px;
+	}
+
+	.five .content .text h2 {
+		font-size: 30px;
+	}
+	.five .content .text p {
+		display: none;
+	}
+
+	.five .content .text .p::before {
+		content: "It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immedeiately.";
+	}
+}
+/* End Five */
+
+/* Start Ending */
+.ending {
+	text-align: center;
+}
+/* End Ending */
+
+/* Start Footer */
+footer {
+	padding-top: var(--main-padding);
+}
+
+footer .image {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+footer .image img {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Start Content Footer */
+footer .content {
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--very-dark-cyan);
+	margin-top: -5px;
+	color: white;
+	padding-bottom: var(--main-padding);
+}
+
+footer .content .one img {
+	background-color: white;
+	width: fit-content;
+	height: fit-content;
+}
+
+footer .content .icon {
+	display: flex;
+	margin-top: 40px;
+}
+footer .content .icon p {
+	margin: 0;
+	padding-left: 20px;
+}
+
+footer .content .icon {
+	margin-top: 20px;
+	display: flex;
+}
+
+footer .one {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+footer .two {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+footer .content .two form input[type="text"] {
+	border-radius: 10px;
+	height: 50px;
+	width: 300px;
+	border: 0;
+	margin-right: 20px;
+	text-indent: 15px;
+}
+
+footer .content .two form input[type="submit"] {
+	background-color: var(--pink);
+	color: white;
+	border: 0;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+footer .content .one .social {
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-between;
+	align-items: center;
+	width: 140px;
+}
+
+footer .content .one .social i {
+	cursor: pointer;
+}
+
+footer .content .one .social .facebook {
+	border-radius: 50%;
+	transition-duration: var(--main-transition);
+}
+
+footer .content .one .social .facebook:hover {
+	background-color: white;
+	color: #036fe5;
+}
+
+footer .content .one .social .instagram {
+	transition-duration: var(--main-transition);
+}
+
+footer .content .one .social .instagram:hover {
+	color: #fc1280;
+}
+
+footer .content .one .social .twitter {
+	transition-duration: var(--main-transition);
+}
+footer .content .one .social .twitter:hover {
+	color: #3897ff;
+}
+/* End Content Footer */
+
+/* Media For Mobile 375px */
+@media (min-width: 375px) and (max-width: 376px) {
+	footer .content {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	footer .content .two {
+		padding: 0;
+		padding-left: 20px;
+		padding-right: 4px;
+	}
+
+	footer .content .two {
+		padding: 0;
+		padding-left: 20px;
+		padding-right: 4px;
+	}
+
+	footer .content .two form input[type="submit"] {
+		margin-top: 20px;
+		margin-left: 150px;
+	}
+}
+/* End Footer */
